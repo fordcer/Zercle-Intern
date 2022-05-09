@@ -1,0 +1,224 @@
+html{
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.empty_box {
+    position: relative;
+    top: -210px;
+    left: 530px;
+    width: 45%;
+    height: 11cm;
+    background-color: antiquewhite;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.button_findout {
+    position: absolute;
+    bottom: -48px;
+    right: 0;
+}
+
+.button_findout button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+}
+
+.button_color1 {
+    background-color: darkblue;
+    padding: 16.1px 20px;
+}
+
+.button_color1:hover {
+    background-color: red;
+    transition: 0.3s;
+}
+
+.button_color2 {
+    background-color: red;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.button_color2:hover {
+    background-color: darkblue;
+    transition: 0.3s;
+}
+
+.image_tower {
+    text-align: flex-start;
+}
+
+.image_tower img {
+    width: 85%;
+    background-color: darkblue;
+    padding-bottom: 0.4cm;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.straight_line {
+    position: relative;
+    top: 100px;
+    width: 110px;
+    left: 60px;
+}
+
+hr {
+    height: 2px;
+    background-color: darkblue;
+    border: none;
+}
+
+.para_it {
+    text-align: left;
+    position: relative;
+    top: 90px;
+    line-height: 25px;
+    left: 200px;
+    font-size: 20px;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    width: auto;
+    padding: 35px 16px;
+}
+
+.topnav a {
+    text-align: right;
+    float: left;
+    color: darkblue;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav b {
+    width: 26%;
+    text-align: center;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: red;
+    transition: 0.5s;
+}
+  
+.topleft {
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 5px solid darkblue;
+    color: darkblue;
+    padding: 15px 25px;
+    background-color: white;
+    z-index: 100;
+}
+
+.topleft:hover {
+    color: red;
+    border-color: red;
+    transition: 0.5s;
+}
+
+.it_con {
+    letter-spacing: 2px;
+    line-height: 60px;
+    font-size: 32px;
+    display: block;
+    margin-left: 60px;
+    margin-right: 200px;
+    position: relative;
+    top: 50px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20cm;
+    padding-top: 2cm;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.footer button {
+    font-size: 24px;
+}
+
+.footer b {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 300px;
+}
+
+form  div{
+    background-color: purple;
+    display: flex;
+    width: 50%;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.fname {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: flex-start; */
+}
+
+.lname {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.our_service {
+    background-color: aqua;
+}
+
