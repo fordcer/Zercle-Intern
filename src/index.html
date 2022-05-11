@@ -1,15 +1,49 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet" />
+  <title>Calculator</title>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-
-  <h1>test 2</h1>
+  <script src="../src/myScript.js"></script>
+  <div class="relative flex item-center justify-center h-screen overflow-hidden">
+    <div class="w-screen h-screen">
+      <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src="../src/asset/bg-calculator.mp4"></video>
+    </div>
+    <div class="flex flex-col items-center w-screen h-screen justify-center z-20 absolute">
+      <div class="bg-red-200 w-96 h-4/5" >
+        <p class="text-center bg-yellow-200 p-5">Calculator</p>
+        <div class="flex flex-col p-14 items-end bg-black text-white">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="flex content-around flex-wrap text-3xl">
+          <button class="all_button">CE</button>
+          <button class="all_button">DEL</button>
+          <button class="all_button">%</button>
+          <button class="all_button"> +</button>
+          <button class="all_button">7</button>
+          <button class="all_button">8</button>
+          <button class="all_button">9</button>
+          <button class="all_button">-</button>
+          <button class="all_button">4</button>
+          <button class="all_button">5</button>
+          <button class="all_button">6</button>
+          <button class="all_button">x</button>
+          <button class="all_button">1</button>
+          <button class="all_button">2</button>
+          <button class="all_button">3</button>
+          <button class="all_button">÷</button>
+          <button class="all_button">0</button>
+          <button class="all_button">±</button>
+          <button class="all_button">.</button>
+          <button class="all_button">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
