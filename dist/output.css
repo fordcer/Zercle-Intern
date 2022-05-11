@@ -476,36 +476,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
-.-top-1\/2 {
-  top: -50%;
-}
-
-.bottom-96 {
-  bottom: 24rem;
-}
-
 .z-10 {
   z-index: 10;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .z-20 {
   z-index: 20;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
+.m-5 {
+  margin: 1.25rem;
 }
 
 .box-border {
@@ -524,8 +504,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 80%;
 }
 
-.h-16 {
-  height: 4rem;
+.h-28 {
+  height: 7rem;
 }
 
 .min-h-full {
@@ -536,16 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-96 {
   width: 24rem;
 }
 
-.w-20 {
-  width: 5rem;
-}
-
-.w-auto {
-  width: auto;
+.w-full {
+  width: 100%;
 }
 
 .min-w-full {
@@ -580,27 +560,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-blue-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
-}
-
-.bg-red-200 {
+.bg-emerald-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -608,12 +578,49 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-cyan-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 250 254 / var(--tw-bg-opacity));
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-teal-300 {
+  --tw-gradient-from: #5eead4;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(94 234 212 / 0));
+}
+
+.to-blue-100 {
+  --tw-gradient-to: #dbeafe;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
-.p-14 {
-  padding: 3.5rem;
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .text-center {
@@ -625,9 +632,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-8 {
+  outline-width: 8px;
+}
+
+.outline-lime-600 {
+  outline-color: #65a30d;
+}
+
+.outline-cyan-800 {
+  outline-color: #155e75;
 }
 
 .all_button {
@@ -637,5 +693,5 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 5rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
