@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.all_pokemon {
+    @apply w-32 p-1 m-1 border-2 border-black rounded-3xl hover:scale-150;
+}

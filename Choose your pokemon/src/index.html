@@ -7,10 +7,21 @@
 </head>
 <body>
     <script src="../src/script.js"></script>
-    <div id="pokemon" class="">
-        <p>Pokemon</p>
-        <div class="bg-red-200 w-1/2 h-1/2">
-            <div class=""></div>
+    <div id="pokemon" class="bg-pokemon-bg bg-center w-screen h-screen flex flex-col items-center justify-center relative">
+        <img class="m-2 w-80 absolute top-1 left-1 hover:scale-110" src="../src/asset/icon-poke.png" alt="">
+        <div class="bg-red-500 h-3/4 w-1/2 flex flex-row rounded-3xl box-border">
+            <div class=" h-full w-1/4 flex flex-col justify-around items-center" id="pic_left"></div>
+            <div class="bg-red-700 h-full w-2/4 flex flex-col-reverse justify-around items-center" id="pic_main">
+                <div class="flex flex-col justify-around bg-fuchsia-500 w-3/4 h-1/4">
+                    <p class="text-center" id="pokemon-name">name</p>
+                    <div class="flex flex-row justify-around">
+                        <p id="pokemon-weight">weight</p>
+                        <p id="pokemon-height">height</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" h-full w-1/4 flex flex-col justify-around items-center" id="pic_right"></div>
         </div>
     </div>
 </body>

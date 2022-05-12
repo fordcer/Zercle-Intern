@@ -8,7 +8,7 @@
   <title>Calculator</title>
 </head>
 <body>
-  <script src="../src/myScript.js"></script>
+  <script src="../src/myScript.js" defer></script>
   <div class="relative flex item-center justify-center h-screen overflow-hidden">
     <div class="w-screen h-screen">
       <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src="../src/asset/bg-calculator.mp4"></video>
@@ -17,30 +17,30 @@
       <div class="bg-gradient-to-br from-teal-300 to-blue-100 w-96 h-4/5 m-5 outline outline-8 outline-cyan-800">
         <p class="text-center bg-gradient-to-br from-teal-300 to-blue-100 p-3 text-3xl font-bold">Calculator</p>
         <div class="flex flex-col justify-between p-3 items-end bg-black text-white w-full h-28 ">
-          <div class="text-lg">100 +</div>
-          <div class="text-4xl">300</div>
+          <div data-previous-operand class="text-lg"></div>
+          <div data-current-operand class="text-4xl"></div>
         </div>
         <div class="flex content-around flex-wrap text-3xl">
-          <button class="all_button">CE</button>
-          <button class="all_button">DEL</button>
+          <button data-all-clear class="all_button">CE</button>
+          <button data-delete class="all_button">DEL</button>
           <button class="all_button">%</button>
-          <button class="all_button"> +</button>
-          <button class="all_button">7</button>
-          <button class="all_button">8</button>
-          <button class="all_button">9</button>
-          <button class="all_button">-</button>
-          <button class="all_button">4</button>
-          <button class="all_button">5</button>
-          <button class="all_button">6</button>
-          <button class="all_button">x</button>
-          <button class="all_button">1</button>
-          <button class="all_button">2</button>
-          <button class="all_button">3</button>
-          <button class="all_button">÷</button>
-          <button class="all_button">0</button>
+          <button data-operation class="all_button"> +</button>
+          <button data-number class="all_button">7</button>
+          <button data-number class="all_button">8</button>
+          <button data-number class="all_button">9</button>
+          <button data-operation class="all_button">-</button>
+          <button data-number class="all_button">4</button>
+          <button data-number class="all_button">5</button>
+          <button data-number class="all_button">6</button>
+          <button data-operation class="all_button">x</button>
+          <button data-number class="all_button">1</button>
+          <button data-number class="all_button">2</button>
+          <button data-number class="all_button">3</button>
+          <button data-operation class="all_button">÷</button>
+          <button data-number class="all_button">0</button>
           <button class="all_button">±</button>
-          <button class="all_button">.</button>
-          <button class="all_button">=</button>
+          <button data-number class="all_button">.</button>
+          <button data-equals class="all_button">=</button>
         </div>
       </div>
     </div>

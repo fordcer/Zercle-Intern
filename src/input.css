@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .all_button {
-    @apply border-black border-2 m-2 box-border w-20 h-16;
+    @apply border-black border-2 m-2 box-border w-20 h-16 text-cyan-900;;
 }
