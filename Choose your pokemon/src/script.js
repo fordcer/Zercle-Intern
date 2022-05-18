@@ -66,7 +66,7 @@ function pokemonShufflePic(data) {
 
     var mainPicPokemon = document.createElement("img");
 
-    // mainPicPokemon.setAttribute("src", picpokemon.front_default);
+    mainPicPokemon.setAttribute("src", picpokemon.front_default);
     mainPicPokemon.setAttribute("class","all_pokemon");
     mainContainer.appendChild(mainPicPokemon);
 

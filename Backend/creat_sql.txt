@@ -1,0 +1,55 @@
+mysql -u root -p 
+
+CREATE TABLE employee (
+Emp_name varchar(255),
+Age smallint,
+SSN char(13),
+Salary int,
+Department smallint
+);
+
+CREATE TABLE department (
+Department_name varchar(255),
+Department_id smallint,
+Chief char(13),
+Location varchar(255)
+);
+
+SHOW TABLES;
+
+SHOW COLUMNS FROM department;
+SHOW COLUMNS FROM employee;
+
+ALTER TABLE employee RENAME TO member;
+
+ALTER TABLE employee ADD graduated boolean;
+
+ALTER TABLE employee ADD CONSTRAINT PK_employee PRIMARY KEY (SSN);
+ALTER TABLE department ADD CONSTRAINT PK_department PRIMARY KEY (Department_id);
+
+ALTER TABLE employee ADD CONSTRAINT FK_EmployeeDepartment FOREIGN KEY (department) REFERENCES department(department_id);
+ALTER TABLE department ADD CONSTRAINT FK_DepartmentEmployee FOREIGN KEY (chief) REFERENCES employee(SSN);
+
+INSERT INTO employee VALUES ("fordcer", 20, "1234567890123", 40000, 1, false);
+INSERT INTO employee VALUES ("cer", 22, "1234567890124", 40000, 1, false);
+INSERT INTO department VALUES ("CoE", 1, null, "EN KKU");
+
+UPDATE department SET Chief ="1234567890124" WHERE department_id = 1;
+
+INSERT INTO employee VALUES ("forer", 30, "1234567890125", 40000, 1, false);
+INSERT INTO employee VALUES ("cercer", 42, "1234567890126", 40000, 1, false);
+INSERT INTO department VALUES ("Zercle", 2, null, "Lung Mor");
+
+UPDATE department SET Chief ="1234567890126" WHERE department_id = 2;
+
+UPDATE employee SET Department = "2" WHERE Emp_name ="forer" OR Emp_name="cercer";
+
+SECECT * FROM department;
+SECECT * FROM emmployee;
+SECECT Emp_name FROM employee;
+
+SELECT * FROM employee JOIN department ON employee.department = department.department_id;
+
+SELECT Emp_name, SSN, department_name FROM employee JOIN department ON department.chief = employee.SSN WHERE department.department_id =2;
+
+SELECT * FROM employee ORDER BY Age desc,SSN desc;
