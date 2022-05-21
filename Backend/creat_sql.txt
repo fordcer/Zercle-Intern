@@ -25,6 +25,7 @@ ALTER TABLE employee RENAME TO member;
 ALTER TABLE employee ADD graduated boolean;
 
 ALTER TABLE employee ADD CONSTRAINT PK_employee PRIMARY KEY (SSN);
+
 ALTER TABLE department ADD CONSTRAINT PK_department PRIMARY KEY (Department_id);
 
 ALTER TABLE employee ADD CONSTRAINT FK_EmployeeDepartment FOREIGN KEY (department) REFERENCES department(department_id);
@@ -53,3 +54,11 @@ SELECT * FROM employee JOIN department ON employee.department = department.depar
 SELECT Emp_name, SSN, department_name FROM employee JOIN department ON department.chief = employee.SSN WHERE department.department_id =2;
 
 SELECT * FROM employee ORDER BY Age desc,SSN desc;
+
+select * from employee where age In (20,22);
+
+select * from employee where employee.department In (select department.department_id from department WHERE department.department_Name = "Zercle");
+
+select count(salary) from employee where salary >= 40000;
+
+select AVG(age) from employee;
