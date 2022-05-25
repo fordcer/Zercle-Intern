@@ -484,6 +484,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0.25rem;
 }
 
+.top-40 {
+  top: 10rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -579,6 +587,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(217 70 239 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-pokemon-bg {
   background-image: url('../src/asset/poke_bg.jpg');
 }
@@ -589,6 +602,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .all_pokemon {
